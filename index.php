@@ -105,7 +105,7 @@ $items = $db->query($selectQuery);
     <main role="main" class='offset-3 col-6 mt-3'>
 
       <!-- Todo item creation form -->
-      <form action='/' method='post' class='form-inline justify-content-center'>
+      <form action='<?= BASE_URL ?>' method='post' class='form-inline justify-content-center'>
         <input type='hidden' name='action' value='new' />
 
         <div class='form-group'>
@@ -126,7 +126,7 @@ $items = $db->query($selectQuery);
             <div class='title'><?= $item['title'] ?></div>
 
             <!-- Todo item controls -->
-            <form action='/' method='post'>
+            <form action='<?= BASE_URL ?>' method='post'>
               <input type='hidden' name='id' value='<?= $item['id'] ?>' />
 
               <div class='btn-group btn-group-sm'</div>
