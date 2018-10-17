@@ -45,19 +45,19 @@ The incomplete lines of code are marked with the following comment: `// IMPLEMEN
 The first two team members will be referred to as **Bob** and **Alice**.
 
 1. **Bob**
-  * Open the [MediaComem/comem-archidep-php-todo-exercise][ex-repo] in your browser.
-  * Click the **`Fork`** button in the top-right corner of the page (you must be logged in to GitHub).
+   * Open the [MediaComem/comem-archidep-php-todo-exercise][ex-repo] in your browser.
+   * Click the **`Fork`** button in the top-right corner of the page (you must be logged in to GitHub).
 
-    ![Fork](images/fork.png)
+     ![Fork](images/fork.png)
 
-    This will create a copy of the repository on GitHub that belongs to you (under your GitHub username instead of `MediaComem`).
-  * In the settings of that repository, add **Alice** and any other team members to the list of **Collaborators** (this will give them push access).
-  * Clone the repository on your local machine.
+     This will create a copy of the repository on GitHub that belongs to you (under your GitHub username instead of `MediaComem`).
+   * In the settings of that repository, add **Alice** and any other team members to the list of **Collaborators** (this will give them push access).
+   * Clone the repository on your local machine.
 2. **Alice** (and other team members)
-  * Clone Bob's repository on your local machine.
+   * Clone Bob's repository on your local machine.
 3. **All**
-  * Implement one or more missing feature.
-  * Commit the change and push it to GitHub.
+   * Implement one or more missing feature.
+   * Commit the change and push it to GitHub.
 
 
 
