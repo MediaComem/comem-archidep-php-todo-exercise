@@ -2,18 +2,31 @@
 
 The goal of this exercise is to collaborate on a simple project on GitHub as a team of 2 or 3.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Application](#application)
+  - [Tips](#tips)
+- [Instructions](#instructions)
+- [Evaluation](#evaluation)
+- [Delivery](#delivery)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 
 ## Application
 
 This repository contains a partially implemented todo list written in PHP, HTML and CSS.
+The application connects to a MySQL database.
+All the code is in the `index.php` file.
 
-Parts of the PHP code are missing, marked with a comment `// IMPLEMENT ME`.
-
-You may run this application on your local machine with [MAMP][mamp] or [WAMP][wamp], or with a local installation of PHP and MySQL.
+The incomplete lines of code are marked with the following comment: `// IMPLEMENT ME`.
 
 ### Tips
 
+* You may run this application on your local machine with [MAMP][mamp] or [WAMP][wamp], or with a local installation of PHP and MySQL if you already have them.
 * This repository contains a `todolist.sql` file you can use to create the database for this project.
 
   If you use MAMP, you can run its contents from MAMP's phpMyAdmin interface.
