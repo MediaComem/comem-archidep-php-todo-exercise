@@ -57,7 +57,7 @@ The first two team members will be referred to as **Bob** and **Alice**.
    * Clone Bob's repository on your local machine.
 3. **All**
    * Implement one or more missing feature.
-   * Commit the change and push it to GitHub.
+   * Commit the change and push it to Bob's repository on GitHub.
 
 
 
