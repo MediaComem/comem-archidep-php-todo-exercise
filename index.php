@@ -10,59 +10,61 @@ define('DB_PORT', '3306');
 $db = new PDO('mysql:host='.DB_HOST.';port='.DB_PORT.';dbname='.DB_NAME, DB_USER, DB_PASS);
 $items = array();
 
-switch($_POST['action']) {
+if (isset($_POST['action'])) {
+  switch($_POST['action']) {
 
-  /**
-   * Insert a new task into the database, then redirect to the base URL.
-   */
-  case 'new':
+    /**
+     * Insert a new task into the database, then redirect to the base URL.
+     */
+    case 'new':
 
-    $title = $_POST['title'];
-    if ($title && $title !== '') {
-      $insertQuery = 'INSERT INTO todo VALUES(NULL, \''.$title.'\', FALSE, CURRENT_TIMESTAMP)';
-      if (!$db->query($insertQuery)) {
-        die(print_r($db->errorInfo(), true));
+      $title = $_POST['title'];
+      if ($title && $title !== '') {
+        $insertQuery = 'INSERT INTO todo VALUES(NULL, \''.$title.'\', FALSE, CURRENT_TIMESTAMP)';
+        if (!$db->query($insertQuery)) {
+          die(print_r($db->errorInfo(), true));
+        }
       }
-    }
 
-    header('Location: '.BASE_URL);
-    die();
+      header('Location: '.BASE_URL);
+      die();
 
-  /**
-   * Toggle a task (i.e. if it is done, undo it; if it is not done, mark it as done),
-   * then redirect to the base URL.
-   */
-  case 'toggle':
+    /**
+     * Toggle a task (i.e. if it is done, undo it; if it is not done, mark it as done),
+     * then redirect to the base URL.
+     */
+    case 'toggle':
 
-    $id = $_POST['id'];
-    if(is_numeric($id)) {
-      $updateQuery = ''; // IMPLEMENT ME
-      if(!$db->query($updateQuery)) {
-        die(print_r($db->errorInfo(), true));
+      $id = $_POST['id'];
+      if(is_numeric($id)) {
+        $updateQuery = ''; // IMPLEMENT ME
+        if(!$db->query($updateQuery)) {
+          die(print_r($db->errorInfo(), true));
+        }
       }
-    }
 
-    header('Location: '.BASE_URL);
-    die();
+      header('Location: '.BASE_URL);
+      die();
 
-  /**
-   * Delete a task, then redirect to the base URL.
-   */
-  case 'delete':
+    /**
+     * Delete a task, then redirect to the base URL.
+     */
+    case 'delete':
 
-    $id = $_POST['id'];
-    if(is_numeric($id)) {
-      $deleteQuery = ''; // IMPLEMENT ME
-      if(!$db->query($deleteQuery)) {
-        die(print_r($db->errorInfo(), true));
+      $id = $_POST['id'];
+      if(is_numeric($id)) {
+        $deleteQuery = ''; // IMPLEMENT ME
+        if(!$db->query($deleteQuery)) {
+          die(print_r($db->errorInfo(), true));
+        }
       }
-    }
 
-    header('Location: '.BASE_URL);
-    die();
+      header('Location: '.BASE_URL);
+      die();
 
-  default:
-    break;
+    default:
+      break;
+  }
 }
 
 /**
