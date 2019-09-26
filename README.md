@@ -45,7 +45,7 @@ The incomplete lines of code are marked with the following comment: `// IMPLEMEN
 The first two team members will be referred to as **Bob** and **Alice**.
 
 1. **Bob**
-   * Open the [MediaComem/comem-archidep-php-todo-exercise][ex-repo] in your browser.
+   * Open the [MediaComem/comem-archidep-php-todo-exercise repository][ex-repo] in your browser.
    * Click the **`Fork`** button in the top-right corner of the page (you must be logged in to GitHub).
 
      ![Fork](images/fork.png)
