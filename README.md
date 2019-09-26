@@ -75,13 +75,10 @@ The first two team members will be referred to as **Bob** and **Alice**.
 
 ## Delivery
 
-If your full name is visible on your GitHub profile or in your commits,
-you do not need to send anything aside from pushing your commits to your team's forked repository.
-
-Otherwise, send an email to the teacher with:
+Send one email per team to the teacher with:
 
 * The link to the team's solution repository on GitHub.
-* The list of team members and their GitHub username (if it is not obvious).
+* The list of team members (and their GitHub username if it is not obvious).
 
 
 
