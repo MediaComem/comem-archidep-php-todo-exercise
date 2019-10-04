@@ -9,6 +9,7 @@ The goal of this exercise is to collaborate on a simple project on GitHub as a t
 - [Application](#application)
   - [Tips](#tips)
 - [Instructions](#instructions)
+- [End result](#end-result)
 - [Evaluation](#evaluation)
 - [Delivery](#delivery)
 
@@ -58,6 +59,13 @@ The first two team members will be referred to as **Bob** and **Alice**.
 3. **All**
    * Implement one or more missing feature.
    * Commit the change and push it to Bob's repository on GitHub.
+
+
+
+## End result
+
+The fully implemented application should look and behave like this:
+https://comem-archidep-php-todolist.herokuapp.com
 
 
 
