@@ -76,6 +76,8 @@ https://comem-archidep-php-todolist.herokuapp.com
   * Tasks can be added, toggled and deleted.
   * Tasks must be listed from newest to oldest (i.e. by descending creation date).
 * Each team member must contribute at least one useful commit.
+  * The commits must be made on each team member's machine using their local Git
+    installation, not through GitHub's web interface.
   * The author name and email address of each team member's commits must be correctly configured.
 * Commit messages must be relevant (i.e. describe the change that was made).
 
