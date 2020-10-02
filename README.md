@@ -136,6 +136,11 @@ sure that the following parameters are configured correctly:
   listening. The default MySQL port is 3306, but it may be different depending
   on your installation method. For example, MAMP uses port 8888 by default.
 
+> You may also have made a mistake when creating the MySQL user. If you are not
+> sure, you can delete the user by running the query `DROP USER
+> 'todolist'@'localhost';`, then re-run the `CREATE USER ...` and `GRANT ALL
+> PRIVILEGES ...` queries of the `todolist.sql` file.
+
 ### `Invalid argument supplied for foreach()`
 
 If you see an error that looks like this displayed in your browser or in the PHP
