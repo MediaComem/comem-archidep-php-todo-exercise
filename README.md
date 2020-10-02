@@ -13,9 +13,9 @@ The goal of this exercise is to collaborate on a simple project on GitHub as a t
 - [Evaluation](#evaluation)
 - [Delivery](#delivery)
 - [Troubleshooting](#troubleshooting)
-  - [MariaDB/MySQL `You have an error in your SQL syntax [...] near BY [...]`](#mariadbmysql-you-have-an-error-in-your-sql-syntax--near-by-)
+  - [`You have an error in your SQL syntax [...] near BY`](#you-have-an-error-in-your-sql-syntax--near-by)
   - [`Uncaught PDOException [...] Access denied`](#uncaught-pdoexception--access-denied)
-  - [`PHP Warning: Invalid argument supplied for foreach()`](#php-warning-invalid-argument-supplied-for-foreach)
+  - [`Invalid argument supplied for foreach()`](#invalid-argument-supplied-for-foreach)
   - [Adding a todo item redirects to another URL](#adding-a-todo-item-redirects-to-another-url)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -104,7 +104,7 @@ Send one email per team to the teacher with:
 > `php.ini` configuration, such as
 > [`error_reporting`](https://www.php.net/manual/en/errorfunc.configuration.php#ini.error-reporting).
 
-### MariaDB/MySQL `You have an error in your SQL syntax [...] near BY [...]`
+### `You have an error in your SQL syntax [...] near BY`
 
 The `todolist.sql` file contains the following query:
 
@@ -136,7 +136,7 @@ sure that the following parameters are configured correctly:
   listening. The default MySQL port is 3306, but it may be different depending
   on your installation method. For example, MAMP uses port 8888 by default.
 
-### `PHP Warning: Invalid argument supplied for foreach()`
+### `Invalid argument supplied for foreach()`
 
 If you see an error that looks like this displayed in your browser or in the PHP
 error log:
