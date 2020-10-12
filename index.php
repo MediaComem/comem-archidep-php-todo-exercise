@@ -138,7 +138,7 @@ $items = $db->query($selectQuery);
             <form action='<?= BASE_URL ?>' method='post'>
               <input type='hidden' name='id' value='<?= $item['id'] ?>' />
 
-              <div class='btn-group btn-group-sm'</div>
+              <div class='btn-group btn-group-sm'>
 
                 <!-- Todo item toggle button -->
                 <button type='submit' name='action' value='toggle' class='btn btn-primary'>
