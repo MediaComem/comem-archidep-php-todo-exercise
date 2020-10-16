@@ -17,6 +17,7 @@ The goal of this exercise is to collaborate on a simple project on GitHub as a t
   - [`Uncaught PDOException [...] Access denied`](#uncaught-pdoexception--access-denied)
   - [`Invalid argument supplied for foreach()`](#invalid-argument-supplied-for-foreach)
   - [Adding a todo item redirects to another URL](#adding-a-todo-item-redirects-to-another-url)
+  - [The application displays correctly but modifications are not taken into account](#the-application-displays-correctly-but-modifications-are-not-taken-into-account)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -167,6 +168,25 @@ example, if you are accessing the application at
 `http://localhost:8888/comem-archidep-php-todo-exercise/`, then `BASE_URL`
 should be `/comem-archidep-php-todo-exercise/`. If you are accessing the
 application at `http://localhost:8888`, then `BASE_URL` should be `/`.
+
+### The application displays correctly but modifications are not taken into account
+
+You may have configured your `BASE_URL` without a trailing slash (e.g.
+`/comem-archidep-php-todo-exercise` instead of
+`/comem-archidep-php-todo-exercise/`).
+
+The Apache web server (in MAMP or equivalent) will not treat requests to those
+two paths in the same way:
+
+* The first path `/comem-archidep-php-todo-exercise` will probably be redirected
+  to `/comem-archidep-php-todo-exercise/` with a standard Apache configuration.
+  Any form data submitted in the request will be lost in the redirection.
+* The second path `/comem-archidep-php-todo-exercise/` refers to the directory
+  by the same name. In that case, a standard Apache configuration will probably
+  execute the `index.php` page in that directory.
+
+Without the trailing slash, your application may display correctly, but form
+submission may be broken.
 
 
 
