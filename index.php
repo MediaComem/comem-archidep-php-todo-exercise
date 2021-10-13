@@ -5,7 +5,7 @@
 // "http://localhost:8888/comem-archidep-php-todo-exercise/", then BASE_URL
 // should be "/comem-archidep-php-todo-exercise/". If you are accessing the
 // application at "http://localhost:8888", then BASE_URL should be "/".
-define(/comem-archidep-php-todo-exercise/);
+define('BASE_URL', '/comem-archidep-php-todo-exercise/');
 
 // Database connection parameters.
 define('DB_USER', 'todolist');
@@ -44,7 +44,7 @@ if (isset($_POST['action'])) {
 
       $id = $_POST['id'];
       if(is_numeric($id)) {
-        $updateQuery = 'UPDATE todo SET done = 1 AND done = 0  WHERE todo.id ="'.$_POST['id'].'" '; // IMPLEMENT ME
+        $updateQuery = ''; // IMPLEMENT ME
         if(!$db->query($updateQuery)) {
           die(print_r($db->errorInfo(), true));
         }
@@ -60,7 +60,7 @@ if (isset($_POST['action'])) {
 
       $id = $_POST['id'];
       if(is_numeric($id)) {
-        $deleteQuery = ''; // IMPLEMENT ME
+        $deleteQuery = 'DELETE FROM todo WHERE todo.id ="'.$_POST['id'].'"';
         if(!$db->query($deleteQuery)) {
           die(print_r($db->errorInfo(), true));
         }
@@ -77,7 +77,7 @@ if (isset($_POST['action'])) {
 /**
  * Select all tasks from the database.
  */
-$selectQuery = ''; // IMPLEMENT ME
+$selectQuery = ''; 
 $items = $db->query($selectQuery);
 ?>
 
