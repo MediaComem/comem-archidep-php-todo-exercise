@@ -11,7 +11,7 @@ The goal of this exercise is to collaborate on a simple project on GitHub as a t
 - [End result](#end-result)
 - [Evaluation](#evaluation)
 - [Delivery](#delivery)
-- [End result](#end-result-1)
+- [Architecture](#architecture)
 - [Troubleshooting](#troubleshooting)
   - [`You have an error in your SQL syntax [...] near BY`](#you-have-an-error-in-your-sql-syntax--near-by)
   - [`Uncaught PDOException [...] Access denied`](#uncaught-pdoexception--access-denied)
