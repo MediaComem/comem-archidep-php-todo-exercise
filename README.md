@@ -5,13 +5,13 @@ The goal of this exercise is to collaborate on a simple project on GitHub as a t
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [Application](#application)
   - [Tips](#tips)
 - [Instructions](#instructions)
 - [End result](#end-result)
 - [Evaluation](#evaluation)
 - [Delivery](#delivery)
+- [End result](#end-result-1)
 - [Troubleshooting](#troubleshooting)
   - [`You have an error in your SQL syntax [...] near BY`](#you-have-an-error-in-your-sql-syntax--near-by)
   - [`Uncaught PDOException [...] Access denied`](#uncaught-pdoexception--access-denied)
@@ -95,6 +95,18 @@ Send one email per team to the teacher with:
 
 * The link to the team's solution repository on GitHub.
 * The list of team members (and their GitHub username if it is not obvious).
+
+
+
+## Architecture
+
+This is a simplified architecture of the main running processes and
+communication flow at the end of the exercise (assuming you've used MAMP with
+Apache running on port 8888 and MySQL on port 8889).
+
+![Diagram](./images/simplified-architecture.png)
+
+> [PDF version](./images/simplified-architecture.pdf).
 
 
 
