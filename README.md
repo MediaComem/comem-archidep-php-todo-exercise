@@ -91,7 +91,7 @@ https://comem-archidep-php-todolist.herokuapp.com
 
 ## Delivery
 
-Send one email per team to the teacher with:
+Send one email per team to both teachers (Simon O. & Simon P.) with:
 
 * The link to the team's solution repository on GitHub.
 * The list of team members (and their GitHub username if it is not obvious).
