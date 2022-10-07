@@ -71,8 +71,7 @@ The first two team members will be referred to as **Bob** and **Alice**.
 ## End result
 
 The fully implemented application should look and behave like this:
-https://comem-archidep-php-todolist.herokuapp.com
-
+https://archidep-php-todolist.onrender.com/
 
 
 ## Evaluation
