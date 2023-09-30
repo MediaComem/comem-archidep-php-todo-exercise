@@ -71,7 +71,7 @@ The first two team members will be referred to as **Bob** and **Alice**.
 ## End result
 
 The fully implemented application should look and behave like this:
-https://archidep-php-todolist.onrender.com/
+https://archidep-todolist.onrender.com/
 
 
 ## Evaluation
