@@ -1,6 +1,7 @@
 # Collaborative Git Exercise
 
-The goal of this exercise is to collaborate on a simple project on GitHub as a team of 2 or 3.
+The goal of this exercise is to collaborate on a simple project on GitHub as a
+team of 2 or 3.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -25,25 +26,33 @@ The goal of this exercise is to collaborate on a simple project on GitHub as a t
 
 ## Application
 
-This repository contains a partially implemented todo list written in PHP, HTML and CSS.
-The application connects to a MySQL database.
-All the code is in the `index.php` file.
+This repository contains a partially implemented todo list written in PHP, HTML
+and CSS. The application connects to a MySQL database. All the code is in the
+`index.php` file.
 
 The incomplete lines of code are marked with the following comment: `// IMPLEMENT ME`.
 
 ### Tips
 
-* You may run this application on your local machine with [MAMP][mamp] or [WAMP][wamp], or with a local installation of PHP and MySQL if you already have them.
-* This repository contains a `todolist.sql` file you can use to create the database for this project.
+* You may run this application on your local machine with [MAMP][mamp] or
+  [WAMP][wamp], or with a local installation of PHP and MySQL if you already
+  have them.
+* This repository contains a `todolist.sql` file you can use to create the
+  database for this project.
 
   If you use MAMP, you can run its contents from MAMP's phpMyAdmin interface.
-* You can update the [constants at the top of `index.php`][ex-constants] to match your local installation:
-  * The value of `BASE_URL` must match the URL at which the application is available.
+* You can update the [constants at the top of `index.php`][ex-constants] to
+  match your local installation:
+  * The value of `BASE_URL` must match the URL at which the application is
+    available.
 
-    For example, if you use MAMP and put this repository in MAMP's `htdocs` directory,
-    the application will be accessible at http://localhost:8888/comem-archidep-php-todo-exercise/ (with the default ports).
-    In this situation, the value of `BASE_URL` should be `/comem-archidep-php-todo-exercise/`.
-  * You can change the value of `DB_PORT` to match your local MySQL port (for example, with MAMP, the default is 8889).
+    For example, if you use MAMP and put this repository in MAMP's `htdocs`
+    directory, the application will be accessible at
+    http://localhost:8888/comem-archidep-php-todo-exercise/ (with the default
+    ports). In this situation, the value of `BASE_URL` should be
+    `/comem-archidep-php-todo-exercise/`.
+  * You can change the value of `DB_PORT` to match your local MySQL port (for
+    example, with MAMP, the default is 8889).
 
 
 
@@ -52,19 +61,23 @@ The incomplete lines of code are marked with the following comment: `// IMPLEMEN
 The first two team members will be referred to as **Bob** and **Alice**.
 
 1. **Bob**
-   * Open the [MediaComem/comem-archidep-php-todo-exercise repository][ex-repo] in your browser.
-   * Click the **`Fork`** button in the top-right corner of the page (you must be logged in to GitHub).
+   * Open the [MediaComem/comem-archidep-php-todo-exercise repository][ex-repo]
+     in your browser.
+   * Click the **`Fork`** button in the top-right corner of the page (you must
+     be logged in to GitHub).
 
      ![Fork](images/fork.png)
 
-     This will create a copy of the repository on GitHub that belongs to you (under your GitHub username instead of `MediaComem`).
-   * In the settings of that repository, add **Alice** and any other team members to the list of **Collaborators** (this will give them push access).
-   * Clone the repository on your local machine.
+     This will create a copy of the repository on GitHub that belongs to you
+     (under your GitHub username instead of `MediaComem`).
+   * In the settings of the forked repository, add **Alice** and any other team
+     members to the list of **Collaborators** (this will give them push access).
+   * Clone the forked repository on your local machine.
 2. **Alice** (and other team members)
    * Clone Bob's repository on your local machine.
 3. **All**
-   * Implement one or more missing feature.
-   * Commit the change and push it to Bob's repository on GitHub.
+   * Implement one or more of the missing features.
+   * Commit the changes and push them to Bob's repository on GitHub.
 
 
 
@@ -77,13 +90,15 @@ https://archidep-todolist.onrender.com/
 ## Evaluation
 
 * The work must be delivered in the forked repository on GitHub.
-* The todo list must work.
+* The todo list must work:
   * Tasks can be added, toggled and deleted.
-  * Tasks must be listed from newest to oldest (i.e. by descending creation date).
-* Each team member must contribute at least one useful commit.
+  * Tasks must be listed from newest to oldest (i.e. by descending creation
+    date).
+* Each team member must contribute at least one useful commit:
   * The commits must be made on each team member's machine using their local Git
     installation, not through GitHub's web interface.
-  * The author name and email address of each team member's commits must be correctly configured.
+  * The author name and email address of each team member's commits must be
+    correctly configured.
 * Commit messages must be relevant (i.e. describe the change that was made).
 
 
@@ -164,7 +179,7 @@ PHP Warning: Invalid argument supplied for foreach()
 
 It is simply because you have not yet implemented the `SELECT` query in the
 `$selectQuery` variable. This makes the `$items` variable empty, which produces
-an error in the `foreach` loop which attempts to iterate over it to display the
+an error in the `foreach` loop that attempts to iterate over it to display the
 todo items.
 
 ### Adding a todo item redirects to another URL
